@@ -24,6 +24,7 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
             <RowDefinition Height="5*" />
         </Grid.RowDefinitions>
         <Label 
@@ -49,12 +50,18 @@
             Content="Search"
             Click="SearchButton_Click"
         />
+        <Button
+            Grid.Row="3"
+            Grid.Column="0"
+            Content="Add movie"
+            Click="AddMovie_Click"
+        />
         <ListBox
             x:Name="FilmResults"
             Grid.Column="1"
             Grid.Row="1"
             Grid.ColumnSpan="2"
-            Grid.RowSpan="3"
+            Grid.RowSpan="4"
             Background="#333333"
             Foreground="#ffffff"
         />
